@@ -6,25 +6,37 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Nvatomate</h1>
-    </div>
-    <div class="main-content">
-      <h2>Login</h2>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="login-section">
       <form action="/login" method="post">
-        <div class="input-group">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-        </div>
-        <div class="input-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-        </div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
         <button type="submit">Login</button>
       </form>
     </div>
+    <div class="menu">
+      <a href="https://www.nvatomate.com/home" target="_blank">HOME</a> | 
+      <a href="https://www.nvatomate.com/about" target="_blank">ABOUT</a> | 
+      <a href="https://www.nvatomate.com/services" target="_blank">SERVICES</a> | 
+      <a href="https://www.nvatomate.com/contact" target="_blank">CONTACT</a>
+    </div>
   </div>
+
+  <!-- Main Banner -->
+  <div class="main-banner">
+    <h1>Welcome to Nvatomate</h1>
+    <p>Your gateway to efficient business solutions.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Follow us on social media.</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
