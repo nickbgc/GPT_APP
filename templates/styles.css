@@ -1,14 +1,62 @@
+/* Resetting default styles */
 body, html {
     margin: 0;
     padding: 0;
-    color: #000;
-    color: #fff;
     font-family: 'Arial', sans-serif;
   }
   
+  /* Main container */
   .container {
     text-align: center;
     margin: auto;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+  }
+  
+  /* Login section in the header */
+  .login-section {
+    float: left;
+  }
+  
+  /* Main banner */
+  .main-banner {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+  }
+
+  /* 3D Animation */
+  .animate-3d {
+    transform: perspective(500px) rotateY(20deg);
+    transition: transform 0.5s ease;
+  }
+  
+  
+  /* Content sections */
+  .content-section {
+    padding: 50px;
+    text-align: left;
+  }
+  
+  /* Contact and Newsletter forms */
+  .form-section {
+    padding: 50px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
   }
   
   /* Toggle Switch */
