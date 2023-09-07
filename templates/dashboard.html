@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KPI Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="toggle-container">
+            <span>Light Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+        <h1>Welcome to Your KPI Dashboard</h1>
+
+        <!-- NvPulse KPIs -->
+        <h2>NvPulse KPIs</h2>
+        <div id="NvPulse"></div>
+        <script>
+            var NvPulse_data = {{ NvPulse|safe }};
+            Plotly.newPlot('NvPulse', NvPulse_data);
+        </script>
+
+        <!-- GeoBlox KPIs -->
+        <h2>GeoBlox KPIs</h2>
+        <div id="GeoBlox"></div>
+        <script>
+            var GeoBlox_data = {{ GeoBlox|safe }};
+            Plotly.newPlot('GeoBlox', GeoBlox_data);
+        </script>
+
+        <!-- SiteSeePixl KPIs -->
+        <h2>SiteSeePixl KPIs</h2>
+        <div id="SiteSeePixl"></div>
+        <script>
+            var SiteSeePixl_data = {{ SiteSeePixl|safe }};
+            Plotly.newPlot('SiteSeePixl', SiteSeePixl_data);
+        </script>
+
+        <!-- Nguage KPIs -->
+        <h2>Nguage KPIs</h2>
+        <div id="Nguage"></div>
+        <script>
+            var Nguage_data = {{ Nguage|safe }};
+            Plotly.newPlot('Nguage', Nguage_data);
+        </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
